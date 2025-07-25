@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Registration Form</title>
+</head>
+<body>
+<h1>Register for Event</h1>
+<form action="/register" method="post">
+<table border="1" cellpadding="8" cellspacing="0">
+<tr>
+<td><label for="fullname">Full Name:</label></td>
+<td><input type="text" id="fullname" name="fullname" required></td>
+</tr>
+<tr>
+<td><label for="email">Email:</label></td>
+<td><input type="email" id="email" name="email" placeholder="example@domain.com" required></td>
+</tr>
+<tr>
+<td><label for="phone">Phone Number:</label></td>
+<td><input type="tel" id="phone" name="phone" required></td>
+</tr>
+<tr>
+<td>Gender:</td>
+<td>
+<input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label>
+<input type="radio" id="other" name="gender" value="Other"><label for="other">Other</label>
+</td>
+</tr>
+<tr>
+<td><label for="agegroup">Age Group:</label></td>
+<td>
+<select id="agegroup" name="agegroup" required>
+<option value="">--Select--</option>
+<option value="under18">Under 18</option>
+<option value="18-25">18–25</option>
+<option value="26-40">26–40</option>
+<option value="41-60">41–60</option>
+<option value="60plus">60+</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Topics of Interest:</td>
+<td>
+<input type="checkbox" id="ai" name="topics" value="AI"><label for="ai">AI</label>
+<input type="checkbox" id="webdev" name="topics" value="Web Development"><label for="webdev">Web Development</label>
+<input type="checkbox" id="cloud" name="topics" value="Cloud"><label for="cloud">Cloud Computing</label>
+<input type="checkbox" id="cyber" name="topics" value="Cybersecurity"><label for="cyber">Cybersecurity</label>
+</td>
+</tr>
+<tr>
+<td><label for="comments">Additional Comments:</label></td>
+<td><textarea id="comments" name="comments" rows="4" cols="40" placeholder="Any questions or suggestions..."></textarea></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<button type="submit">Register</button>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

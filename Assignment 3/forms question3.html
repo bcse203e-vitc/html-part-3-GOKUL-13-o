@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Feedback Form</title>
+</head>
+<body>
+<h1>Website Feedback</h1>
+<form action="/submit-feedback" method="post">
+<table border="1" cellpadding="8" cellspacing="0">
+<tr>
+<td><label for="name">Name:</label></td>
+<td><input type="text" id="name" name="name" required></td>
+</tr>
+<tr>
+<td><label for="email">Email:</label></td>
+<td><input type="email" id="email" name="email" placeholder="example@domain.com" required></td>
+</tr>
+<tr>
+<td>Rate the Website:</td>
+<td>
+<input type="radio" id="star1" name="rating" value="1"><label for="star1">1</label>
+<input type="radio" id="star2" name="rating" value="2"><label for="star2">2</label>
+<input type="radio" id="star3" name="rating" value="3"><label for="star3">3</label>
+<input type="radio" id="star4" name="rating" value="4"><label for="star4">4</label>
+<input type="radio" id="star5" name="rating" value="5"><label for="star5">5</label>
+</td>
+</tr>
+<tr>
+<td><label for="type">Type of Feedback:</label></td>
+<td>
+<select id="type" name="type" required>
+<option value="">--Select--</option>
+<option value="suggestion">Suggestion</option>
+<option value="bug">Bug Report</option>
+<option value="compliment">Compliment</option>
+</select>
+</td>
+</tr>
+<tr>
+<td><label for="feedback">Feedback:</label></td>
+<td><textarea id="feedback" name="feedback" rows="4" cols="40" placeholder="Your feedback..."></textarea></td>
+</tr>
+<tr>
+<td>Would you recommend us?</td>
+<td>
+<input type="radio" id="yes" name="recommend" value="Yes"><label for="yes">Yes</label>
+<input type="radio" id="no" name="recommend" value="No"><label for="no">No</label>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
