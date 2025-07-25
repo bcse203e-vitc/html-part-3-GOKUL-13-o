@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Health Survey Form</title>
+</head>
+<body>
+
+  <h1>Health Survey Form</h1>
+
+  <form>
+    <table border="1" cellpadding="10" cellspacing="0">
+      
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" name="name" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="age">Age:</label></td>
+        <td><input type="number" id="age" name="age" required></td>
+      </tr>
+
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="Other">
+          <label for="other">Other</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="height">Height (in cm):</label></td>
+        <td><input type="number" id="height" name="height" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="weight">Weight (in kg):</label></td>
+        <td><input type="number" id="weight" name="weight" required></td>
+      </tr>
+
+      <tr>
+        <td>Lifestyle Questions:</td>
+        <td>
+          <input type="checkbox" id="smoking" name="lifestyle" value="Smoking">
+          <label for="smoking">Smoking</label><br>
+          <input type="checkbox" id="alcohol" name="lifestyle" value="Alcohol">
+          <label for="alcohol">Alcohol Consumption</label><br>
+          <input type="checkbox" id="exercise" name="lifestyle" value="Exercise">
+          <label for="exercise">Regular Exercise</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="diet">Dietary Preference:</label></td>
+        <td>
+          <select id="diet" name="diet">
+            <option value="vegetarian">Vegetarian</option>
+            <option value="non-vegetarian">Non-Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="other">Other</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="activity">Activity Level:</label></td>
+        <td>
+          <select id="activity" name="activity">
+            <option value="sedentary">Sedentary</option>
+            <option value="moderate">Moderate</option>
+            <option value="active">Active</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><label for="healthConcerns">Optional Health Concerns:</label></td>
+        <td><textarea id="healthConcerns" name="healthConcerns" rows="4" cols="40"></textarea></td>
+      </tr>
+
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Submit">
+        </td>
+      </tr>
+
+    </table>
+  </form>
+
+</body>
+</html>

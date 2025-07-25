@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Booking Form</title>
+</head>
+<body>
+
+  <h1>Travel Booking Form</h1>
+
+  <form>
+    <table border="1" cellpadding="10" cellspacing="0">
+
+      <tr>
+        <td>Full Name:</td>
+        <td><input type="text" name="fullname" required></td>
+      </tr>
+
+      <tr>
+        <td>Contact Information:</td>
+        <td><input type="text" name="contact" required></td>
+      </tr>
+
+      <tr>
+        <td>Destination:</td>
+        <td>
+          <select name="destination" required>
+            <option value="">Select</option>
+            <option value="Paris">Paris</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="New York">New York</option>
+            <option value="Sydney">Sydney</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Travel Date:</td>
+        <td><input type="date" name="travelDate" required></td>
+      </tr>
+
+      <tr>
+        <td>Number of Travelers:</td>
+        <td><input type="number" name="travelers" required></td>
+      </tr>
+
+      <tr>
+        <td>Travel Class:</td>
+        <td>
+          <input type="radio" id="economy" name="class" value="Economy">
+          <label for="economy">Economy</label>
+          <input type="radio" id="business" name="class" value="Business">
+          <label for="business">Business</label>
+          <input type="radio" id="first" name="class" value="First Class">
+          <label for="first">First Class</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Travel Insurance:</td>
+        <td>
+          <input type="checkbox" name="insurance" value="Yes"> Opt for Insurance
+        </td>
+      </tr>
+
+      <tr>
+        <td>Total Cost:</td>
+        <td><input type="text" name="totalCost" readonly placeholder="Manual Entry"></td>
+      </tr>
+
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Book Now">
+        </td>
+      </tr>
+
+    </table>
+  </form>
+
+</body>
+</html>
